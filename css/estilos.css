@@ -1,0 +1,50 @@
+body{
+    background-image: url(../img/ir.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+img{
+    border-radius: 300px;
+    height: 160px;
+    width: 160px;
+}
+table{
+    background-color: #6E6E6E;
+    width: 30%;
+    text-align: center;
+    border-collapse: collapse;
+    border-radius: 40px;
+}
+tr, td{
+    padding: 5px;
+}
+thead{
+    background-color: black;
+    color: red;
+    border-bottom: solid 2px white;
+    border-radius: 40px;
+}
+input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: red;
+    font-size: 1vw;
+}
+button{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: black;
+    color: red;
+    font-size: 1vw;
+}
+a{
+    text-decoration: none;
+    color: red;
+}
+h3{
+    font-size: 1.2vw;
+}
