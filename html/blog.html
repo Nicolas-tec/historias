@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="../css/blog2.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+
+    <link rel="Stylesheet" href="./Styles.css">
+    <title>proyecto</title>
 </head>
 <body>
     <header class="header" id="inicio">
@@ -85,6 +92,35 @@
             </section>
         </section>
     </main>
+
+    <div class="container">
+        <div class="listado-canciones">
+            <div class="cancion">
+                <div class="titulo2">
+                    Nathan Larson - Avival Pastoral
+                </div>
+                <div class="play" id="musicaterror">
+                    <span class="material-icons">
+                        play_circle
+                    </span>
+                </div>
+                <div class="stop">
+                    <span class="material-icons">
+                        cancel
+                    </span>
+                </div>
+            </div>
+        </div>
+        <input type="range" max="1" min="0" step="0.001" class="volumen">
+        <div class="nm">
+            Sonido 
+        </div>
+    </div>
+    <script src="codigo.js"></script>
+    <!--No hay que presionar el botón de reproducir más de una vez, 
+        porque la canción sonara varias veces de forma simultánea. -->
+    <!------------------------------------------->
+
     <footer id="contacto">
         <div class="contenedor footer-content">
             <div class="contact-us">

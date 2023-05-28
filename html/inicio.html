@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,30 +8,100 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <form action="../php/inicio.php" method="post">
+        <div class="eyes">
+            <div class="eye">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes2">
+            <div class="eye2">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes3">
+            <div class="eye3">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes4">
+            <div class="eye4">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes5">
+            <div class="eye5">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes6">
+            <div class="eye6">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes7">
+            <div class="eye7">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes8">
+            <div class="eye8">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes9">
+            <div class="eye9">
+            <div class="ball"></div>
+            </div>
+        
+        <div class="eyes10">
+            <div class="eye10">
+            <div class="ball"></div>
+            </div>
+            
+        <script>
+        var balls = document.getElementsByClassName("ball");
+        document.onmousemove = function(){
+            var x = event.clientX * 100 / window.innerWidth + "%";
+            var y = event.clientY * 100 / window.innerHeight + "%";
+            //event.clientX => get the horizontal coordinate of the mouse
+            //event.clientY => get the Vertical coordinate of the mouse
+            //window.innerWidth => get the browser width
+            //window.innerHeight => get the browser height
+        
+            for(var i=0;i<100;i++){
+            balls[i].style.left = x;
+            balls[i].style.top = y;
+            balls[i].style.transform = "translate(-"+x+",-"+y+")";
+            }
+        }
+        </script>
+
+    <div class="menu">
+        <form action="../php/inicio.php" method="post">
+                <center>
+                    <table>
+                        <thead>
+                            <tr><td><img src="../img/pefil2.jpg"></td></tr>
+                            <tr><td><h2>iniciar secion</h2></td></tr>
+                        </thead>
+                        <tr><td><h3>nombre completo</h3></td></tr>
+                        <tr>
+                            <td><input type="text" name="nombre" placeholder="nombre" required></td>
+                        </tr>
+                        <tr><td><h3>contrase&ntilde;a</h3></td></tr>
+                        <tr>
+                            <td><input type="password" name="clave" placeholder="qwertyu" required></td>
+                        </tr>
+                        <tr><td><input type="submit" value="iniciar"></td></tr>
+                    </table>
+                </center>
+            </form>
+        <br>
         <center>
             <table>
-                <thead>
-                    <tr><td><img src="../img/pefil2.jpg"></td></tr>
-                    <tr><td><h2>iniciar secion</h2></td></tr>
-                </thead>
-                <tr><td><h3>nombre completo</h3></td></tr>
-                <tr>
-                    <td><input type="text" name="nombre" placeholder="nombre" required></td>
-                </tr>
-                <tr><td><h3>contrase&ntilde;a</h3></td></tr>
-                <tr>
-                    <td><input type="password" name="clave" placeholder="qwertyu" required></td>
-                </tr>
-                <tr><td><input type="submit" value="iniciar"></td></tr>
+                <tr><td><button><a href="../html/registro.html">registrate</a></button></td></tr>
             </table>
         </center>
-    </form>
-    <br>
-    <center>
-        <table>
-            <tr><td><button><a href="../html/registro.html">registrate</a></button></td></tr>
-        </table>
-    </center>
+    </div>
 </body>
 </html>
