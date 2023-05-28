@@ -9,5 +9,5 @@ $sql = "INSERT INTO historias (id_histroria, clave, N_publicasion, N_historia, h
 VALUES ('', '$clave', '$N_publicasion', '$N_historia', '$historia')";
 $resul = mysqli_query($conn, $sql)or trigger_error("Query Failed! SQL- Error:".mysqli_error($conn),E_USER_ERROR);
 echo "$sql";
-header("location: ../html/historia.html");
+header("location: ../html/historias.html");
 ?>

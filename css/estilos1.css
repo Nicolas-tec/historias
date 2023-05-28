@@ -23,7 +23,7 @@ tr, td{
 thead{
     background-color: black;
     color: red;
-    border-bottom: solid 7px white;
+    border-bottom: solid 2px white;
     border-radius: 40px;
     border: solid 1px;
 }
@@ -67,7 +67,7 @@ textarea{
     background-color: black;
     color: red;
     border-bottom: solid 2px white;
-    border-radius: 40px;  
+    border-radius: 40px;   
 }
 .boton{
     width: 40%;
@@ -76,4 +76,19 @@ textarea{
     background-color: black;
     color: red;
     font-size: 1vw;
+}
+.ventana{
+    background: black;
+    width: 30%;
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    padding: 33px;
+    min-height: 250px;
+    border-radius: 22px;
+    position: absolute;
+    left: 34%;
+    top: 35%;
+    display: none;
 }

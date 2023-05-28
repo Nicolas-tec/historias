@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  type="text/css" media="screen" href="../css/estilos2.css">
-    <script src="main.js"></script>
+    <link rel="stylesheet"  type="text/css" media="screen" href="../css/estilos1.css">
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="javascript/main.js"></script>
 </head>
 <body>
 <center>
-    <form action="../php/historial.php" method="post">
+    <script>
+        function alerta(){
+            alert("nueva historia ingresada con exito");
+        }
+    </script>
+    <form action="../php/historia.php" method="post">
         <table>
             <thead>
                 <tr><td><h1>DINOS TU HISTORIA DE TERROR</h1></td></tr>
-                <tr><td><img src="../img/historia.jpg.crdownload" alt=""></td></tr>
+                <tr><td style="background-color: black"><img src="../img/historia.webp" alt=""></td></tr>
             </thead>
             <tr><td><h3>contrase&ntilde;a</h3></td></tr>
             <tr>
@@ -31,7 +37,9 @@
             <tr>
                 <td><textarea name="historia" id="" cols="70" rows="30" placeholder="mi historia es..." required></textarea></td>
             </tr>
-            <tr><td><input type="submit"></td></tr>
+            <tr>
+                <td><input type="submit" onclick="alerta()"></td>
+            </tr>
         </table>
     </form>
     <br>
@@ -39,7 +47,6 @@
         <table>
             <tr><td><button><a href="../html/blog.html">regresion</a></button></td></tr>
         </table>
-    </table>
-</center>
+    </table
 </body>
 </html>

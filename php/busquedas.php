@@ -15,7 +15,7 @@ $conn=mysqli_connect('localhost:3310', 'root', '', 'historias_terror');
             <form name="buscador" method="post">
                 <thead>
                     <tr><td><h1>busca historias</h1></td></tr>
-                    <tr><td><img src="../img/busqueda.jpg" alt=""></td></tr>
+                    <tr><td style="background-color: black"><img src="../img/busqueda.jpg" alt=""></td></tr>
                 </thead>
                 <tr><td><h3>buscar por nombre de la historal</h3></td></tr>
                 <tr><td><input type="text" name="N_historia" placeholder="los acendidos" required></td></tr>
@@ -50,7 +50,31 @@ $conn=mysqli_connect('localhost:3310', 'root', '', 'historias_terror');
             ?>
         </table>
         <br>
+        <br>
+        <br>
+        <table>
+            <thead class="cabeza">
+                <tr>
+                    <td><h3>nombre de la historia</h3></td>
+                    <td><h3>historia</h3></td>
+                </tr>
+            </thead>
+            <?php
+            $sql="SELECT * FROM historias";
+            $result=mysqli_query($conn,$sql);
+            while($mostrar=mysqli_fetch_array($result)){
+            ?>
+            <tr>
+                <td><?php echo $mostrar['N_historia']?></td>
+                <td><?php echo $mostrar['historia']?></td>
+            </tr>
+            <?php
+            }
+            ?>
+        </table>
+        <br>
         <button class="boton"><a href="../html/blog.html">regresion</a></button>
     </center>
+    <script src="javascript/app.js"></script>
 </body>
 </html>
